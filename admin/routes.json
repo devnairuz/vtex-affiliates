@@ -1,0 +1,31 @@
+{
+  "admin.app.affiliates": {},
+  "admin.app.affiliates.commissions": {
+    "component": "CommissionsPage",
+    "path": "/admin/app/affiliates-commissions"
+  },
+  "admin.app.affiliates.dashboard": {
+    "component": "DashboardPage",
+    "path": "/admin/app/affiliates-dashboard"
+  },
+  "admin.app.affiliates.order": {
+    "component": "AffiliateOrderPage",
+    "path": "/admin/app/affiliates-dashboard/:orderId"
+  },
+  "admin.app.affiliates.affiliate-management": {
+    "component": "AffiliateManagementPage",
+    "path": "/admin/app/affiliates-management"
+  },
+  "admin.app.affiliates.affiliate-detail": {
+    "component": "AffiliateDetailPage",
+    "path": "/admin/app/affiliates-management/:affiliateId"
+  },
+  "admin.app.affiliates.affiliate-edit": {
+    "component": "AffiliateEditPage",
+    "path": "/admin/app/affiliates-management/:affiliateId/edit"
+  },
+  "admin.app.affiliates.affiliate-add": {
+    "component": "AffiliateAddPage",
+    "path": "/admin/app/affiliates-management/add"
+  }
+}

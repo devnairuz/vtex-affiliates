@@ -1,0 +1,109 @@
+input AffiliatesFilterInput {
+  searchTerm: String
+  isApproved: Boolean
+  affiliateList: [String]
+}
+
+input AffliatesSortingInput {
+  field: AffiliatesSortingField!
+  order: SortingOrder!
+}
+
+type Address {
+  city: String
+  country: String
+  neighborhood: String
+  number: String
+  postalCode: String
+  reference: String
+  street: String
+  state: String
+}
+
+input AddresInput {
+  city: String
+  country: String
+  neighborhood: String
+  number: String
+  postalCode: String
+  reference: String
+  street: String
+  state: String
+}
+
+type Marketing {
+  instagram: String
+  facebook: String
+  whatsapp: String
+  gtmId: String
+}
+
+input MarketingInput {
+  instagram: String
+  facebook: String
+  whatsapp: String
+  gtmId: String
+}
+
+input NewAffiliateInput {
+  slug: String!
+  name: String!
+  email: String!
+  isApproved: Boolean!
+  refId: String
+  storeName: String
+  address: AddresInput
+  document: String
+  documentType: String
+  phone: String
+  marketing: MarketingInput
+}
+
+input UpdateAffiliateInput {
+  name: String
+  slug: String
+  email: String
+  refId: String
+  isApproved: Boolean
+  storeName: String
+  address: AddresInput
+  document: String
+  documentType: String
+  phone: String
+  marketing: MarketingInput
+}
+
+type Affiliate {
+  id: ID
+  affiliateId: ID
+  name: String
+  slug: String
+  storeName: String
+  email: String
+  phone: String
+  refId: String
+  isApproved: Boolean
+  address: Address
+  document: String
+  documentType: String
+  marketing: Marketing
+}
+
+type AffiliateScroll {
+  id: ID
+  name: String
+  email: String
+}
+
+type AffiliatesScroll {
+  data: [AffiliateScroll]
+}
+
+type AffiliatesPage {
+  data: [Affiliate]!
+  pagination: Pagination!
+}
+
+enum AffiliatesSortingField {
+  isApproved
+}

@@ -1,0 +1,38 @@
+query getAffiliatesOrders(
+  $page: Int!
+  $pageSize: Int!
+  $filter: AffiliateOrdersFilterInput
+  $sorting: AffiliateOrdersSortingInput
+) {
+  affiliateOrders(
+    page: $page
+    pageSize: $pageSize
+    filter: $filter
+    sorting: $sorting
+  ) @context(provider: "vtex.affiliates-commission-service") {
+    data {
+      id
+      orderId
+      affiliateId
+      status
+      orderTotal
+      orderTotalCommission
+      orderDate
+    }
+    pagination {
+      page
+      pageSize
+      total
+    }
+    totalizers(filter: $filter) {
+      total
+      totalCommissionSum
+      totalOrderSum
+    }
+    totalizersProfile(filter: $filter) {
+      totalCancelled
+      totalOngoing
+      totalInvoiced
+    }
+  }
+}

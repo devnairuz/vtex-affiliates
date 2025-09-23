@@ -1,0 +1,46 @@
+{
+  "store.affiliates": {},
+  "store.affiliates-profile": {},
+  "store.affiliate-form": {},
+  "affiliate-validator": {
+    "component": "AffiliateValidator",
+    "composition": "children"
+  },
+  "affiliate-template": {
+    "composition": "children"
+  },
+  "affiliate-invalid-template": {
+    "composition": "children"
+  },
+  "affiliate-store-name": {
+    "component": "AffiliateStoreName"
+  },
+  "affiliate-profile": {
+    "component": "AffiliateProfile",
+    "composition": "children"
+  },
+  "affiliate-profile-button": {
+    "component": "AffiliateProfileButton"
+  },
+  "affiliate-profile-topbar": {
+    "component": "AffiliateProfileTopBar"
+  },
+  "affiliate-profile-title": {
+    "component": "AffiliateProfileTitle"
+  },
+  "affiliate-profile-totalizer": {
+    "component": "AffiliateProfileTotalizer"
+  },
+  "affiliate-profile-table": {
+    "component": "AffiliateProfileTable"
+  },
+  "affiliate-profile-validator": {
+    "component": "AffiliateProfileValidator"
+  },
+  "affiliate-url-monitoring": {
+    "component": "AffiliateURLMonitoring"
+  },
+  "affiliate-form": {
+    "component": "AffiliateForm"
+  }
+}

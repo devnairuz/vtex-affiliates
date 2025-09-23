@@ -1,0 +1,25 @@
+type Query {
+  isAffiliateValid(slug: String): Boolean
+  getAffiliateStoreName(slug: String): String
+  getAffiliates(
+    page: Int!
+    pageSize: Int!
+    filter: AffiliatesFilterInput
+    sorting: AffliatesSortingInput
+  ): AffiliatesPage! @checkAdminAccess
+  getAffiliate(affiliateId: ID!): Affiliate @checkUserAccess
+  getAffiliateByEmail(email: String!): Affiliate
+  getAffiliatesScroll(
+    filter: AffiliatesFilterInput
+    sorting: AffliatesSortingInput
+  ): [AffiliateScroll]!
+}
+
+type Mutation {
+  addAffiliate(newAffiliate: NewAffiliateInput!): Affiliate!
+  updateAffiliate(
+    affiliateId: String!
+    updateAffiliate: UpdateAffiliateInput!
+  ): Affiliate!
+  setAffiliateOnOrderForm(slug: String, orderFormId: String): OrderForm
+}

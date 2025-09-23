@@ -1,0 +1,86 @@
+{
+  "$schema": "http://json-schema.org/schema#",
+  "title": "Affiliates",
+  "type": "object",
+  "properties": {
+    "slug": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "storeName": {
+      "type": "string"
+    },
+    "email": {
+      "type": "string"
+    },
+    "phone": {
+      "type": "string"
+    },
+    "refId": {
+      "type": "string"
+    },
+    "address": {
+      "type": "object",
+      "properties": {
+        "city": {
+          "type": "string"
+        },
+        "complement": {
+          "type": "string"
+        },
+        "country": {
+          "type": "string"
+        },
+        "neighborhood": {
+          "type": "string"
+        },
+        "number": {
+          "type": "string"
+        },
+        "postalCode": {
+          "type": "string"
+        },
+        "reference": {
+          "type": "string"
+        },
+        "state": {
+          "type": "string"
+        },
+        "street": {
+          "type": "string"
+        }
+      }
+    },
+    "document": {
+      "type": "string"
+    },
+    "documentType": {
+      "type": "string"
+    },
+    "isApproved": {
+      "type": "boolean"
+    },
+    "marketing": {
+      "type": "object",
+      "properties": {
+        "instagram": {
+          "type": "string"
+        },
+        "whatsapp": {
+          "type": "string"
+        },
+        "facebook": {
+          "type": "string"
+        },
+        "gtmId": {
+          "type": "string"
+        }
+      }
+    }
+  },
+  "required": ["slug", "email", "name", "isApproved"],
+  "v-indexed": ["slug", "email", "storeName", "name", "phone", "isApproved"],
+  "v-cache": false
+}

@@ -1,0 +1,14 @@
+{
+  "store.affiliates": {
+    "title": "Affiliate Store",
+    "path": "/affiliates/:affiliateId"
+  },
+  "store.affiliates-profile": {
+    "title": "Affiliate Profile",
+    "path": "/affiliates/:affiliateId/profile"
+  },
+  "store.affiliate-form": {
+    "title": "Affiliate Form",
+    "path": "/affiliate/form"
+  }
+}
