@@ -78,14 +78,14 @@
     "props": {
       "marginTop": 3
     },
-    "children": ["search-fetch-more"]
+    "children": ["search-fetch-more#affiliate-fetchmore"]
   },
   "search-fetch-previous": {
     "props": {
       "htmlElementForButton": "a"
     }
   },
-  "search-fetch-more": {
+  "search-fetch-more#affiliate-fetchmore": {
     "props": {
       "htmlElementForButton": "a"
     }

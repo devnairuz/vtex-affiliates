@@ -1,4 +1,4 @@
-import type { QueryGetAffiliateArgs } from 'vtex.affiliates'
+import type { QueryGetAffiliateArgs } from 'agencianairuzpartnerbr.affiliates'
 
 export const getAffiliate = async (
   _: unknown,

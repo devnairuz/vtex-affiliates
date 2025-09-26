@@ -1,4 +1,4 @@
-import type { AffiliatesFilterInput } from 'vtex.affiliates'
+import type { AffiliatesFilterInput } from 'agencianairuzpartnerbr.affiliates'
 
 export const parseAffiliatesFilters = ({
   searchTerm,
@@ -15,7 +15,7 @@ export const parseAffiliatesFilters = ({
   }
 
   if (affiliateList && !searchTerm) {
-    affiliateList.map((id: string) => id !== '' && affiliateIdFilter.push(`id=${id}`))
+    affiliateList.map((id: string | null) => id && id !== '' && affiliateIdFilter.push(`id=${id}`))
     const joinaffiliateIdFilter = `(${affiliateIdFilter.join(' OR ')})`
 
     where.push(joinaffiliateIdFilter)

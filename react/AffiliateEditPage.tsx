@@ -13,7 +13,7 @@ import {
 } from '@vtex/admin-ui'
 import { useRuntime } from 'vtex.render-runtime'
 import { useIntl } from 'react-intl'
-import type { Affiliate, QueryGetAffiliateArgs } from 'vtex.affiliates'
+import type { Affiliate, QueryGetAffiliateArgs } from 'agencianairuzpartnerbr.affiliates'
 import { useQuery } from 'react-apollo'
 
 import { messages } from './utils/messages'

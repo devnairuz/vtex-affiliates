@@ -12,7 +12,7 @@ import {
 import type { FC } from 'react'
 import React from 'react'
 import { useIntl } from 'react-intl'
-import type { Marketing } from 'vtex.affiliates'
+import type { Marketing } from 'agencianairuzpartnerbr.affiliates'
 
 import { messages } from '../../../utils/messages'
 import LoadingBox from '../shared/LoadingBox'

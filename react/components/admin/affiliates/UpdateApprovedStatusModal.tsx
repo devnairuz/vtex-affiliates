@@ -11,7 +11,7 @@ import {
 import type { FC } from 'react'
 import React, { useMemo } from 'react'
 import { useMutation } from 'react-apollo'
-import type { Affiliate } from 'vtex.affiliates'
+import type { Affiliate } from 'agencianairuzpartnerbr.affiliates'
 import { useIntl } from 'react-intl'
 
 import UPDATE_AFFILIATE from '../../../graphql/updateAffiliate.graphql'

@@ -1,6 +1,6 @@
 query getAffiliateOrder($orderId: ID!) {
   affiliateOrder(orderId: $orderId)
-    @context(provider: "vtex.affiliates-commission-service") {
+    @context(provider: "agencianairuzpartnerbr.affiliates-commission-service") {
     id
     orderId
     affiliateId

@@ -112,6 +112,8 @@ const CommissionsTable: FC = () => {
     },
   })
 
+  console.log(data)
+
   const [updateCommissionMutation, { loading: mutationLoading }] = useMutation(
     UPDATE_COMMISSION,
     {

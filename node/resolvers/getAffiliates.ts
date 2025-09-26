@@ -1,4 +1,4 @@
-import type { QueryGetAffiliatesArgs } from 'vtex.affiliates'
+import type { QueryGetAffiliatesArgs } from 'agencianairuzpartnerbr.affiliates'
 
 import { parseAffiliatesFilters } from '../utils/filters'
 
