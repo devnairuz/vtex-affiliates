@@ -33,7 +33,7 @@
     "store": "0.x",
     "messages": "1.x",
     "admin": "0.x",
-    "masterdata": "0.x"
+    "masterdata": "2.x"
   },
   "credentialType": "absolute",
   "policies": [
