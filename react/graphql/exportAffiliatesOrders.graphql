@@ -7,5 +7,5 @@ mutation exportAffiliateOrders(
     filter: $filter
     sorting: $sorting
     affiliates: $affiliates
-  ) @context(provider: "agencianairuzpartnerbr.affiliates-commission-service")
+  ) @context(provider: "vtex.affiliates-commission-service")
 }

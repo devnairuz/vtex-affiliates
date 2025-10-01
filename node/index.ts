@@ -27,6 +27,7 @@ import { getAffiliateStoreName } from './resolvers/getAffiliateStoreName'
 import { getAffiliateLead } from './middlewares/getAffiliateLead'
 import { verifyUserAffiliation } from './middlewares/verifyUserAffiliation'
 import { authenticateRequest } from './middlewares/authenticateRequest'
+import updateCommissionToSku from './middlewares/updateCommissionToSku'
 import { getAffiliates } from './resolvers/getAffiliates'
 import { getAffiliatesScroll } from './resolvers/getAffiliatesScroll'
 import { addAffiliate } from './resolvers/addAffiliate'
@@ -103,6 +104,9 @@ export default new Service({
         setAffiliateLeadOnCustomData,
       ],
     }),
+    updateCommissionToSku: method({
+      PATCH: [updateCommissionToSku]
+    })
   },
   graphql: {
     resolvers: {

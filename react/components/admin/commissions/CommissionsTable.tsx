@@ -40,6 +40,7 @@ import ExportTableDataControl from '../shared/ExportTableDataControl'
 import { setSortOrder } from '../../../utils/shared'
 import TableActions from '../shared/TableActions'
 import { EDIT_ICON } from '../../../utils/icons'
+import ImportCommissionUnique from './ImportCommissionUnique'
 
 type TableColumns = {
   id: string
@@ -288,6 +289,9 @@ const CommissionsTable: FC = () => {
             exportAction={exportData}
             loading={exportLoading}
           />
+          
+          <ImportCommissionUnique />
+
           <FlexSpacer />
           <Pagination
             state={pagination}

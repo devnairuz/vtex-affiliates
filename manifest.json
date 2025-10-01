@@ -8,6 +8,7 @@
   "categories": [],
   "dependencies": {
     "vtex.affiliates-order-form-spy": "1.x",
+    "vtex.affiliates-commission-service": "2.x",
     "vtex.store": "2.x",
     "vtex.rich-text": "0.x",
     "vtex.flex-layout": "0.x",
@@ -21,9 +22,6 @@
     "vtex.styleguide": "9.x",
     "vtex.css-handles": "1.x",
     "vtex.session-client": "1.x"
-  },
-  "peerDependencies": {
-    "agencianairuzpartnerbr.affiliates-commission-service": "1.x"
   },
   "builders": {
     "node": "6.x",

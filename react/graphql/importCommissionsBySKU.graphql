@@ -1,4 +1,4 @@
 mutation importCommissionsBySKU($file: Upload!) {
   importCommissionsBySKU(file: $file)
-    @context(provider: "agencianairuzpartnerbr.affiliates-commission-service")
+    @context(provider: "vtex.affiliates-commission-service")
 }

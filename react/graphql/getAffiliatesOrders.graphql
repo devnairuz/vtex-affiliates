@@ -9,7 +9,7 @@ query getAffiliatesOrders(
     pageSize: $pageSize
     filter: $filter
     sorting: $sorting
-  ) @context(provider: "agencianairuzpartnerbr.affiliates-commission-service") {
+  ) @context(provider: "vtex.affiliates-commission-service") {
     data {
       id
       orderId

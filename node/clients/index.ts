@@ -6,6 +6,8 @@ import AuthenticationClient from './authenticationClient'
 import CheckoutExtended from './checkout'
 import IdentityClient from './IdentityClient'
 import VtexId from './vtexId'
+import { MasterDataClient } from './masterdataClient';
+
 import { withCustomSchema } from '../utils/withCustomSchema'
 
 export class Clients extends IOClients {
@@ -40,5 +42,9 @@ export class Clients extends IOClients {
 
   public get vtexId() {
     return this.getOrSet('vtexId', VtexId)
+  }
+
+  public get masterData() {
+    return this.getOrSet("masterData", MasterDataClient);
   }
 }

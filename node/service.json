@@ -21,6 +21,10 @@
           "principals": ["vrn:apps:*:*:*:app/vtex.affiliates-order-form-spy@*"]
         }
       ]
+    },
+    "updateCommissionToSku": {
+      "path": "/_v/updateCommission",
+      "public": true
     }
   },
   "events": {

@@ -1,4 +1,4 @@
-import type { AffiliatesFilterInput } from 'agencianairuzpartnerbr.affiliates'
+import type { AffiliatesFilterInput } from 'vtex.affiliates'
 
 export const parseAffiliatesFilters = ({
   searchTerm,

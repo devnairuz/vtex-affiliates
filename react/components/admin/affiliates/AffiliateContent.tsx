@@ -10,7 +10,7 @@ import type { FC } from 'react'
 import React, { useCallback, useEffect } from 'react'
 import { useQuery } from 'react-apollo'
 import { useRuntime } from 'vtex.render-runtime'
-import type { Affiliate, QueryGetAffiliateArgs } from 'agencianairuzpartnerbr.affiliates'
+import type { Affiliate, QueryGetAffiliateArgs } from 'vtex.affiliates'
 import { useIntl } from 'react-intl'
 
 import GET_AFFILIATE from '../../../graphql/getAffiliate.graphql'

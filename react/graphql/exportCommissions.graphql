@@ -3,5 +3,5 @@ mutation exportCommissionsBySKU(
   $sorting: CommissionsBySKUSortingInput
 ) {
   exportCommissionsBySKU(filter: $filter, sorting: $sorting)
-    @context(provider: "agencianairuzpartnerbr.affiliates-commission-service")
+    @context(provider: "vtex.affiliates-commission-service")
 }

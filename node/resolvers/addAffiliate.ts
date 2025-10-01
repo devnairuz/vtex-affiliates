@@ -1,4 +1,4 @@
-import type { MutationAddAffiliateArgs } from 'agencianairuzpartnerbr.affiliates'
+import type { MutationAddAffiliateArgs } from 'vtex.affiliates'
 import CustomGraphQLError from '@vtex/api/lib/errors/customGraphQLError'
 
 import type { Affiliates } from '../typings/affiliates'
