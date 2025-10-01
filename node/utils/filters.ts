@@ -1,4 +1,4 @@
-import type { AffiliatesFilterInput } from 'vtex.affiliates'
+import type { AffiliatesFilterInput } from 'delivo.affiliates'
 
 export const parseAffiliatesFilters = ({
   searchTerm,

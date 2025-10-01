@@ -1,4 +1,4 @@
-import type { QueryGetAffiliatesArgs } from 'vtex.affiliates'
+import type { QueryGetAffiliatesArgs } from 'delivo.affiliates'
 
 import { getAffiliates } from '../../../resolvers/getAffiliates'
 

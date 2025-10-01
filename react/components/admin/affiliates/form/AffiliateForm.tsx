@@ -3,7 +3,7 @@ import { Form, useFormState, yupResolver } from '@vtex/admin-ui-form'
 import type { FC } from 'react'
 import React, { useCallback, useMemo } from 'react'
 import { useMutation } from 'react-apollo'
-import type { Affiliate } from 'vtex.affiliates'
+import type { Affiliate } from 'delivo.affiliates'
 import { useIntl } from 'react-intl'
 import { useRuntime } from 'vtex.render-runtime'
 
