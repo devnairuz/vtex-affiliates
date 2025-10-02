@@ -32,8 +32,6 @@ function ErrorMessage(props: Props) {
   const { errors, showToast, context } = props
   const intl = useIntl()
 
-  console.log(context)
-
   const errorMessages: { [key in ErrorKeys]: string } = {
     SlugNotAlphanumeric: `${context}/affiliate.register.errorSlugAlphanumeric`,
     URLInUse: `${context}/affiliate.register.errorURLInUse`,
