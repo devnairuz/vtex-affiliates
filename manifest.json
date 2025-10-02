@@ -1,7 +1,7 @@
 {
   "name": "affiliates",
   "vendor": "delivo",
-  "version": "1.0.5",
+  "version": "1.0.4",
   "title": "Affiliates",
   "description": "App that adds support for affiliates on IO stores",
   "mustUpdateAt": "2018-01-04",
@@ -27,7 +27,7 @@
     "node": "6.x",
     "docs": "0.x",
     "react": "3.x",
-    "graphql": "2.x",
+    "graphql": "1.x",
     "store": "0.x",
     "messages": "1.x",
     "admin": "0.x",
