@@ -10,21 +10,15 @@ import { MasterDataClient } from './masterdataClient';
 
 import { withCustomSchema } from '../utils/withCustomSchema'
 
+import { MD } from '../utils/constants'
+
 export class Clients extends IOClients {
   public get affiliates() {
-    return this.getOrSet(
-      'affiliates',
-      withCustomSchema('1.7.0', masterDataFor<Affiliates>('affiliates'))
-    )
+    return this.getOrSet( 'affiliates', withCustomSchema(MD.AFFILIATES.schema, masterDataFor<Affiliates>(MD.AFFILIATES.entity)) )
   }
 
   public get userAffiliation() {
-    return this.getOrSet(
-      'userAffiliation',
-      withCustomSchema(
-        '1.7.0',
-        masterDataFor<UserAffiliation>('userAffiliation')
-      )
+    return this.getOrSet('userAffiliation', withCustomSchema(MD.USER_AFFILIATION.schema, masterDataFor<UserAffiliation>(MD.USER_AFFILIATION.entity))
     )
   }
 
