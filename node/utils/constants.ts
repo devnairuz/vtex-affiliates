@@ -21,11 +21,11 @@ export const SCROLL_PAGE_SIZE = 1000
 export const MD = {
   AFFILIATES: {
     entity: process.env.AFFILIATES_ENTITY ?? 'affiliates',
-    schema: process.env.AFFILIATES_SCHEMA ?? '2.3.0',
+    schema: process.env.AFFILIATES_SCHEMA ?? '1.0.12',
   },
   USER_AFFILIATION: {
     entity: process.env.USER_AFFILIATION_ENTITY ?? 'userAffiliation',
-    schema: process.env.USER_AFFILIATION_SCHEMA ?? '2.3.0',
+    schema: process.env.USER_AFFILIATION_SCHEMA ?? '1.0.12',
   },
   COMMISSION: {
     entity: process.env.AFFILIATES_COMMISSION_ENTITY
