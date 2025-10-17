@@ -36,41 +36,21 @@
   "credentialType": "absolute",
   "policies": [
     {
-      "name": "ADMIN_DS"
-    },
-    {
       "name": "outbound-access",
       "attrs": {
-        "host": "api.vtex.com",
-        "path": "/api/dataentities/*"
+        "host": "portal.vtexcommercestable.com.br",
+        "path": "/api/oms/*"
       }
-    },
-    {
-      "name": "AcessaTodosPedidos"
     },
     {
       "name": "outbound-access",
       "attrs": {
         "host": "{{account}}.vtexcommercestable.com.br",
-        "path": "/api/checkout/pvt/*"
+        "path": "/api/dataentities/*"
       }
     },
     {
-      "name": "SaveOrderFormConfiguration"
-    },
-    {
-      "name": "outbound-access",
-      "attrs": {
-        "host": "portal.vtexcommercestable.com.br",
-        "path": "/api/checkout/pvt/*"
-      }
-    },
-    {
-      "name": "outbound-access",
-      "attrs": {
-        "host": "httpstat.us",
-        "path": "*"
-      }
+      "name": "vtex-api-super-user"
     },
     {
       "name": "colossus-fire-event"
