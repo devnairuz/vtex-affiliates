@@ -77,9 +77,6 @@
     },
     {
       "name": "colossus-write-logs"
-    },
-    {
-      "name": "vtex-api-super-user"
     }
   ],
   "settingsSchema": {
