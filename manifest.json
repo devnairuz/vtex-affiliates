@@ -1,7 +1,7 @@
 {
   "name": "affiliates",
   "vendor": "delivo",
-  "version": "1.0.14",
+  "version": "1.0.15",
   "title": "Affiliates",
   "description": "App that adds support for affiliates on IO stores",
   "mustUpdateAt": "2018-01-04",
@@ -79,7 +79,7 @@
       "name": "colossus-write-logs"
     },
     {
-      "name": "vtex-api-super-user" 
+      "name": "vtex-api-super-user"
     }
   ],
   "settingsSchema": {
